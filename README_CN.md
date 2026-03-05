@@ -11,6 +11,8 @@
 
 [English](README.md) | [中文](README_CN.md)
 
+修改了代码文件以适配在算力自由平台上的Isaaclab机器人训练框架下进行ATOM01_TRAIN项目的AMP算法从train到sim2sim验证的流程。项目ROBOPARTY地址：https://github.com/Roboparty/atom01_train 感谢该项目给我的学习机会
+
 ## 概述
 
 本仓库提供了使用 IsaacLab 训练足式机器人的工作流。它提供环境的高透明度和低重构难度，并使用 isaaclab 组件简化流程。代码库基于 IsaacLab 构建，支持 Sim2Sim 传输到 MuJoCo，并具有模块化架构，便于无缝定制和扩展。
@@ -30,16 +32,9 @@
 
 ATOM01-Train 基于最新版本的 IsaacSim/IsaacLab 构建，建议跟随 ATOM01-Train 的最新更新。
 
-- 按照[安装指南](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html)安装 Isaac Lab。我们推荐使用 conda 安装，因为它简化了从终端调用 Python 脚本的过程。
 
-- 独立于 Isaac Lab 安装克隆此仓库（即在 `IsaacLab` 目录之外）：
-- 如果用该仓库的适配版本，这些命令不再需要执行，只需要拉取该仓库的zip文件并上传至算力自由平台的共享文件夹
+- 如果用该仓库的适配版本，下载的命令不再需要执行，只需要拉取该仓库的zip文件并上传至算力自由平台的共享文件夹
 
-```bash
-git clone https://github.com/Roboparty/atom01_train.git
-cd atom01_train
-git submodule update --init --recursive
-```
 
 - 使用已安装 Isaac Lab 的 python 解释器安装库：
 

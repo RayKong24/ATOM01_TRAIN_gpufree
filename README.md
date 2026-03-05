@@ -11,6 +11,8 @@
 
 [English](README.md) | [中文](README_CN.md)
 
+The code file was modified to adapt to the Isaaclab robot training framework on the Compute Flex platform, and to carry out the verification process of the AMP algorithm from training to sim2sim for the ATOM01_TRAIN project. The project's ROBOPARTY address: https://github.com/Roboparty/atom01_train. I am grateful to this project for providing me with the learning opportunity.
+
 ## Overview
 
 This repository provides a workflow for training a legged robot using IsaacLab. It provides high transparency and low refactoring difficulty of the environment, and uses isaaclab components to simplify the workflow. The codebase is built on IsaacLab, supports Sim2Sim transfer to MuJoCo, and features a modular architecture for seamless customization and extension. 
