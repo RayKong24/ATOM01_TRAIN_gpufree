@@ -30,19 +30,16 @@ This repository provides a workflow for training a legged robot using IsaacLab. 
 
 ATOM01-Train is built against the latest version of Isaacsim/IsaacLab. It is recommended to follow the latest updates of ATOM01-Train.
 
-- Install Isaac Lab by following the [installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html). We recommend using the conda installation as it simplifies calling Python scripts from the terminal.
+the Isaac Lab installation (i.e. outside the `IsaacLab` directory):
 
-- Clone this repository separately from the Isaac Lab installation (i.e. outside the `IsaacLab` directory):
+- 如果用该仓库的适配版本，下载的命令不再需要执行，只需要拉取该仓库的zip文件并上传至算力自由平台的共享文件夹
 
-```bash
-git clone https://github.com/Roboparty/atom01_train.git
-```
+
 
 - Using a python interpreter that has Isaac Lab installed, install the library
 
 ```bash
-cd atom01_train
-git submodule update --init --recursive
+
 cd robolab
 pip install -e .
 cd ..

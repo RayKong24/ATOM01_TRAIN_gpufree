@@ -33,16 +33,18 @@ ATOM01-Train 基于最新版本的 IsaacSim/IsaacLab 构建，建议跟随 ATOM0
 - 按照[安装指南](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html)安装 Isaac Lab。我们推荐使用 conda 安装，因为它简化了从终端调用 Python 脚本的过程。
 
 - 独立于 Isaac Lab 安装克隆此仓库（即在 `IsaacLab` 目录之外）：
+- 如果用该仓库的适配版本，这些命令不再需要执行，只需要拉取该仓库的zip文件并上传至算力自由平台的共享文件夹
 
 ```bash
 git clone https://github.com/Roboparty/atom01_train.git
+cd atom01_train
+git submodule update --init --recursive
 ```
 
 - 使用已安装 Isaac Lab 的 python 解释器安装库：
 
 ```bash
-cd atom01_train
-git submodule update --init --recursive
+
 cd robolab
 pip install -e .
 cd ..
